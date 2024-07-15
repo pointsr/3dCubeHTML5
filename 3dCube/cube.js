@@ -1,3 +1,5 @@
+//this is an animation im not learning linear algebra for ts
+
 function drawCircle(x, y) {
     var canvas = document.getElementById('myCanvas');
     if (canvas.getContext) {
