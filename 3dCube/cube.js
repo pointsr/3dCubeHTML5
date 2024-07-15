@@ -1,5 +1,3 @@
-//this is an animation im not learning linear algebra for ts
-
 function drawCircle(x, y) {
     var canvas = document.getElementById('myCanvas');
     if (canvas.getContext) {
@@ -57,9 +55,9 @@ function drawCircle(x, y) {
     ctx.stroke();
     ctx.beginPath();
     //back
-    ctx.moveTo(600 + Math.cos(angles[0] * Math.PI / 180) * 250, 600 + Math.sin(angles[0] * Math.PI / 180) * 250);
+    ctx.moveTo(600 + Math.cos(angles[0] * Math.PI / 180) * 250, 600 + Math.sin(angles[0] * Math.PI / 180) * 230);
     for (let i = 1; i < angles.length; i++) {
-      ctx.lineTo(600 + Math.cos(angles[i] * Math.PI / 180) * 250, 600 + Math.sin(angles[i] * Math.PI / 180) * 250);
+      ctx.lineTo(600 + Math.cos(angles[i] * Math.PI / 180) * 250, 600 + Math.sin(angles[i] * Math.PI / 180) * 230);
     }
     ctx.closePath();
     ctx.stroke();
@@ -67,7 +65,7 @@ function drawCircle(x, y) {
     ctx.beginPath()
     for (let i = 0; i < angles.length;i++){
         ctx.moveTo(500 + Math.cos(angles[i] * Math.PI / 180) * 250,500 + Math.sin(angles[i] * Math.PI / 180) * 250)
-        ctx.lineTo(600 + Math.cos(angles[i] * Math.PI / 180) * 250, 600 + Math.sin(angles[i] * Math.PI / 180) * 250);
+        ctx.lineTo(600 + Math.cos(angles[i] * Math.PI / 180) * 250, 600 + Math.sin(angles[i] * Math.PI / 180) * 230);
     }
     ctx.closePath();
     ctx.stroke();
@@ -80,7 +78,7 @@ function drawCircle(x, y) {
 // ofc a cube is 3d tho so we added another square (a5,a6,a7,a8)
 
   const animate = () => {
-    rotate(5)
-    setTimeout(animate,5)
+    rotate(30)
+    setTimeout(animate,2)
   }
   animate()
