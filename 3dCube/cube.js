@@ -22,8 +22,6 @@ function drawCircle(x, y) {
     degree = degree * Math.PI / 180;
     for (let i = 0; i < angles.length; i++) {
       angles[i] += degree;
-      //this shouldnt work lol
-      //not fixing this tho
       if (angles[i] > 360) {
         angles[i] -= 360;
       }
@@ -76,6 +74,7 @@ function drawCircle(x, y) {
 
 // sick now at this point we have a working spinning square
 // ofc a cube is 3d tho so we added another square (a5,a6,a7,a8)
+// we cycle thorugh and connect the two
 
   const animate = () => {
     rotate(30)
